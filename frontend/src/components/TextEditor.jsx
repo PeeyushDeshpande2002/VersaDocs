@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 import { Box, Button, TextField } from "@mui/material";
 
 //const API_BASE_URL = "http://localhost:5000/api"; // Backend API
-const API_BASE_URL = "https://versadocs.onrender.com"
+const API_BASE_URL = "https://versadocs.onrender.com/api"
 
 const TextEditor = () => {
   const { docId } = useParams();
