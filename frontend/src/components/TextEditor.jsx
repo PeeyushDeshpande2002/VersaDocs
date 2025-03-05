@@ -42,7 +42,8 @@ const TextEditor = () => {
           console.log(data.content);
           const decodedContent = data.content; 
           setContent(decodedContent);
-          setFileName(data.fileName || "UntitledDocument");
+          const cleanFileName = data.fileName.replace(/\.(docx|doc|txt|pdf)$/i, "");
+          setFileName(cleanFileName || "UntitledDocument");
         })
         .catch((err) => console.error("Error fetching document:", err));
     }
