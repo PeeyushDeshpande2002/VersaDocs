@@ -10,26 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@hugerte/hugerte-react": "^1.0.1",
     "@mui/icons-material": "^6.4.6",
     "@mui/material": "^6.4.6",
     "@react-oauth/google": "^0.12.1",
-    "@tiptap/extension-bold": "^2.11.5",
-    "@tiptap/extension-heading": "^2.11.5",
-    "@tiptap/extension-italic": "^2.11.5",
-    "@tiptap/react": "^2.11.5",
-    "@tiptap/starter-kit": "^2.11.5",
-    "arraybuffer-to-string": "^1.0.2",
-    "dotenv": "^16.4.7",
     "firebase": "^11.4.0",
     "jodit-react": "^5.2.15",
-    "jspdf": "^3.0.0",
-    "mammoth": "^1.9.0",
     "notistack": "^3.0.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^7.2.0"
   },
   "devDependencies": {
