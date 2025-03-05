@@ -4,7 +4,8 @@ import { auth, provider, signInWithPopup, GoogleAuthProvider } from "../firebase
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./contextAPI/AuthContext";
 import { useSnackbar } from "notistack";
-const Base_URL = 'http://localhost:5000/api'
+// const API_BASE_URL = 'http://localhost:5000/api'
+const API_BASE_URL = "https://versadocs.onrender.com"
 const Navbar = () => {
   const { isLoggedIn, logout, login } = useAuth();
   const [loading, setLoading] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
       const token = await user.getIdToken();
 
       // Send Token to Backend
-      const response = await fetch(`${Base_URL}/auth/google`, {
+      const response = await fetch(`${API_BASE_URL}/auth/google`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token }),
